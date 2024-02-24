@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+
+    <!--  CSS file -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="layout">
+
+        <!-- Head  -->
+        
+        <p class="title">Calculator</p>
+
+        <!-- display -->
+
+        <input class="display" readonly type="text">
+
+        <!-- button -->
+
+        <div class="buttons">
+            <button class="button_c" onclick="
+            inputArea = ''
+            document.querySelector('.display').value = inputArea;
+            ">C</button>
+
+            <button class="side_button" onclick="
+            inputArea += '(';
+            document.querySelector('.display').value = inputArea;
+            ">(</button>
+
+            <button class="side_button" onclick="
+            inputArea += ')';
+            document.querySelector('.display').value = inputArea;
+            ">)</button>
+ 
+            <button class="side_button" onclick="
+            inputArea += '/';
+            document.querySelector('.display').value = inputArea;
+            ">/</button>
+
+            <button class="button" onclick="
+            inputArea += '7';
+            document.querySelector('.display').value = inputArea;
+            ">7</button>
+
+            <button class="button" onclick="
+            inputArea += '8';
+            document.querySelector('.display').value = inputArea;
+            ">8</button>
+
+            <button class="button" onclick="
+            inputArea += '9';
+            document.querySelector('.display').value = inputArea;
+            ">9</button>
+
+            <button class="side_button" onclick="
+            inputArea += '*';
+            document.querySelector('.display').value = inputArea;
+            ">*</button>
+
+            <button class="button" onclick="
+            inputArea += '4';
+            document.querySelector('.display').value = inputArea;
+            ">4</button>
+
+            <button class="button" onclick="
+            inputArea += '5';
+            document.querySelector('.display').value = inputArea;
+            ">5</button>
+
+            <button class="button" onclick="
+            inputArea += '6';
+            document.querySelector('.display').value = inputArea;
+            ">6</button>
+
+            <button class="side_button" onclick="
+            inputArea += '-';
+            document.querySelector('.display').value = inputArea;
+            ">-</button>
+
+            <button class="button" onclick="
+            inputArea += '1';
+            document.querySelector('.display').value = inputArea;
+            ">1</button>
+
+            <button class="button" onclick="
+            inputArea += '2';
+            document.querySelector('.display').value = inputArea;
+            ">2</button>
+
+            <button class="button" onclick="
+            inputArea += '3';
+            document.querySelector('.display').value = inputArea;
+            ">3</button>
+
+            <button class="side_button" onclick="
+            inputArea += '+';
+            document.querySelector('.display').value = inputArea;
+            ">+</button>
+
+            <button class="button_c" onclick="inputArea = inputArea.slice(0,-1);
+            document.querySelector('.display').value = inputArea"><ion-icon 
+            name="backspace-outline"></ion-icon></button>
+
+            <button class="button" onclick="
+            inputArea += '0';
+            document.querySelector('.display').value = inputArea;
+            ">0</button>
+
+            <button class="side_button" onclick="
+            inputArea += '.';
+            document.querySelector('.display').value = inputArea;
+            ">.</button>
+
+            <button class="side_button" onclick="
+            inputArea = eval(inputArea);
+            document.querySelector('.display').value = inputArea;">=</button>
+
+        </div> 
+    </div>
+
+
+    <!--  JS script  -->
+
+    <script>
+        let inputArea = '';
+        document.querySelector('.display').value = inputArea;
+    </script>
+
+
+    <!--  LOGO link -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>
