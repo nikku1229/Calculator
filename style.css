@@ -135,3 +135,100 @@ ion-icon{
 }
 
 
+
+/*  Responsive  */
+
+
+@media (min-width: 480px){
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .layout{
+        width: 400px;
+        height: 625px;
+        margin-left: 80px;
+        margin-right: 70px
+    }
+    .display{
+        margin-left: 30px;
+        width: 290px;
+    }
+}
+
+
+
+@media (min-width: 520px){
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .layout{
+        width: 360px;
+        height: 625px;
+        margin-left: 80px;
+        margin-right: 70px
+    }
+    .display{
+        margin-left: 30px;
+        width: 298px;
+    }
+}
+
+
+@media (min-width: 570px) {
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .layout{
+        width: 400px;
+        height: 625px;
+        margin-left: 80px;
+        margin-right: 70px
+    }
+    .display{
+        margin-left: 30px;
+        width: 328px;
+    }
+}
+
+
+@media (min-width: 620px){
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .layout{
+        width: 370px;
+        height: 625px;
+        margin-left: 80px;
+        margin-right: 70px
+    }
+    .display{
+        margin-left: 30px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 680px){
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .layout{
+        width: 400px;
+        height: 625px;
+        margin-left: 80px;
+        margin-right: 70px
+    }
+    .display{
+        margin-left: 35px;
+        width: 320px;
+    }
+}
